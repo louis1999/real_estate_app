@@ -1,0 +1,39 @@
+<div class="background">
+    <div class="header-ville">
+        fleche retour arrière à gauche de ville 
+        <h1 class="title">Kots à <%= @ville %> </h1>
+        filtre de recherche à droite de ville
+
+    </div>
+
+
+    
+
+    <div class="body-ville">
+        <div class="vertical-scroll">
+            <% @kots.each do |kot| %>
+
+            <div class="container-card-kot">
+                
+                <a href="kots/<%= kot.id %>">
+                    <div class="card-kot"> 
+                        
+                        <strong>Adresse</strong> : <p><%= kot.adresse%> </p>
+                        <strong>Description</strong> : <p><%= kot.description %></p>                 
+                    </div>
+                </a>  
+            </div>
+            <% end %>
+        </div>
+    </div>
+    
+
+</div>
+
+<strong></strong>
+
+
+
+
+
+

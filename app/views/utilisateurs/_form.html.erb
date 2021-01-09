@@ -1,0 +1,58 @@
+<div class="background">
+    salut les cramés, ici tu peux créer créer un compte sur KotIIIII et si c'est déjà fait tu peux te connecte ! 
+
+    <div>
+        <%= simple_form_for @utilisateur do |f| %>
+
+            <div>
+                <div>
+                    <%= f.input :email, input_html: {class: 'input'}%>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <%= f.input :firstname, input_html: {class: 'input'}%>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <%= f.input :name, input_html: {class: 'input'}%>
+                </div>
+            </div>
+
+            <!-- Pas l'impression que ce soit correct donc a voir, la solution serait de tout faire avec html et pas de simple form for -->
+
+            <div>
+                <div class="field">
+                    <%= f.label :password %>
+                    <% if @minimum_password_length %>
+                    <em>(<%= @minimum_password_length %> characters minimum)</em>
+                    <% end %><br />
+                    <%= f.password_field :password, autocomplete: "off" %>
+                  </div>
+            </div>
+
+            <div>
+                <div class="field">
+                    <%= f.label :password_confirmation %><br />
+                    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+                  </div>
+            </div>
+
+            
+
+
+            <%= f.button :submit, class: "button is-primary" %>
+
+        <% end %>
+
+
+
+    </div>
+
+
+    
+    
+</div>

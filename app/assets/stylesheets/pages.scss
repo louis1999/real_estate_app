@@ -1,0 +1,129 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+// remove default padding
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-page-background{
+    background-color: #FDC869;
+    background: linear-gradient(#FDC869, white);
+}
+
+.brand-name{
+    font-family: Anton;
+    text-align: center;
+    font-size: 80px;
+}
+
+.search-bar{
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 20px;
+    
+}
+
+.search-bar:hover{
+    outline: none;
+
+}
+
+.container-search-bar{
+    padding-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+.logo{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
+.align-header{
+    display: flex;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 3%;
+}
+
+.center{
+    text-align: center;
+}
+
+$finalHeight: 300px;
+$finalWidth: 3 * $finalHeight;
+$scrollBarHeight: 1px;
+
+::-webkit-scrollbar {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+::-webkit-scrollbar-button {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+  
+.horizontal-scroll-wrapper {
+    position: auto;
+    display: block;
+    top: 0;
+    left: 0;
+    width: calc(#{$finalHeight} + #{$scrollBarHeight});
+    max-height: $finalWidth;
+    margin: 0;
+    padding-top: $scrollBarHeight;
+    background: #abc;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-$finalHeight);
+    transform-origin: right top;
+    & > div {
+        display: block;
+        padding: 5px;
+        background: #cab;
+        transform: rotate(90deg);
+        transform-origin: right top;
+    }
+}
+
+.squares {
+    padding: $finalHeight 0 0 0;
+    & > div {
+        width: $finalHeight;
+        height: $finalHeight;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+}
+
+.resize-img{
+    height: 250px;
+    width: auto;
+}
+
+.title{
+    font-family: Anton;
+    font-size: 26px;
+}
+
+
+.cities{
+    padding-left: 5%;
+}

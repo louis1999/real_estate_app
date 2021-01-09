@@ -1,0 +1,39 @@
+// Place all the styles related to the kots controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.header-show-kot{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.kot-title{
+    padding-bottom: 3%;
+}
+
+
+.center-left{
+    text-align: left;
+}
+
+.container-center{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+
+.container-images-kot{
+    display: flex;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+.container-kot-info{
+
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: left;
+}

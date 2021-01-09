@@ -1,0 +1,75 @@
+<div class="main-page-background">
+
+    <div class="align-header">
+        <div>
+            <img src="koti.png" class="logo">
+        </div>
+        
+        <div class="container-search-bar">
+            <input class="search-bar" type="search" placeholder="Trouve ton Kot!" name="search">
+        </div>
+
+        <div>
+            <%= link_to "Ajouter un logement", new_kot_path%> 
+        </div>
+
+        <div>
+            <%= link_to "Connexion", new_utilisateur_path%> 
+        </div>
+
+    </div>
+
+    
+
+
+    <div class="brand-name">
+        KOTI
+    </div>
+    <div class="center">
+        <img src="image_index.png">
+    </div>
+
+
+    <div class="cities">
+        <div class="title">
+            Quelle ville te chauffe?
+        </div>
+    
+        <div class="horizontal-scroll-wrapper squares">
+            <div>
+                <img src="bxl.jpg" class="resize-img"> 
+                <div>
+                    <%= link_to "bxl", villes_path(ville: 'bxl')  %> 
+                </div>
+                
+            </div>
+            <div>
+                <img src="bxl.jpg" class="resize-img"> 
+                <div>
+                    <%= link_to "liege", villes_path(ville: 'liege')  %> 
+                </div>
+                
+            </div>
+            <div>
+                <img src="bxl.jpg" class="resize-img"> 
+                <div>
+                    <%= link_to "lln", villes_path(ville: 'lln')  %> 
+                </div>
+            </div>
+            <div>
+                <img src="bxl.jpg" class="resize-img"> 
+                <div>
+                    <%= link_to "namur", villes_path(ville: 'namur')  %> 
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+
+
+
+</div>
